@@ -1,5 +1,8 @@
 import React, { useEffect, useState, forwardRef, useImperativeHandle } from 'react';
 import { Link } from 'react-router-dom';
+// import Projects from './Projects';
+// import Certifications from './Certifications';
+// import Experience from './Experience';
 import './Home.css';
 
 const Home = forwardRef((props, ref) => {
@@ -117,6 +120,11 @@ const Home = forwardRef((props, ref) => {
                   <span className="stat-number">15+</span>
                   <span className="stat-label">Certifications</span>
                 </div>
+                <div className="stat">
+                  <i className="fas fa-briefcase"></i>
+                  <span className="stat-number">2</span>
+                  <span className="stat-label">Internships</span>
+                </div>
               </div>
 
               {/* Tech Stack */}
@@ -165,6 +173,13 @@ const Home = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
+
+      {/* New Sections for Projects, Certifications, and Experience
+      <div className="additional-sections">
+        <Projects />
+        <Certifications />
+        <Experience />
+      </div> */}
 
       {/* Scroll indicator */}
       <div className="scroll-indicator">

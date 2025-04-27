@@ -28,10 +28,13 @@ const Header = () => {
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <li><Link to="/" onClick={closeMenu}>Home</Link></li>
                     <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+                   <li><Link to="/experience" onClick={closeMenu}>Experience</Link></li>
+                    <li><Link to="/certifications" onClick={closeMenu}>Certifications</Link></li>
                     <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
                     <li><Link to="/skills" onClick={closeMenu}>Skills</Link></li>
                     <li><Link to="/education" onClick={closeMenu}>Education</Link></li>
-                    <li><Link to="/certifications" onClick={closeMenu}>Certifications</Link></li>
+                   
+                    
                     <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
                 </ul>
             </nav>

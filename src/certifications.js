@@ -1,11 +1,21 @@
 export const certifications = [
     {
+        id: 23,
+        title: "Machine Learning Intern",
+        issuer: "GrowthLink",
+        date: "April 2025",
+        description: "1-month machine learning internship focused on data analysis, demonstrating strong analytical and technical skills.",
+        skills: ["Data Analysis", "Machine Learning Algorithms"],
+        credentialId: "GWLKC312100",
+        icon: "fas fa-chart-line"
+    },
+    {
         id: 22,
         title: "Deloitte - Data Analytics Job Simulation",
-        issuer: "Forge",
+        issuer: "Forage",
         date: "April 2025",
         description: "Data analytics simulation covering statistical testing, data validation, and commercial thinking.",
-        skills: ["Data analysis","Forensic technology"],
+        skills: ["Data Analysis", "Forensic Technology"],
         credentialId: "LcrkHXjdyFjjadYc4",  
         icon: "fas fa-chart-line"
     },
@@ -16,6 +26,7 @@ export const certifications = [
         date: "April 2025",
         description: "Certification in Microsoft AI, covering AI fundamentals and applications.",
         skills: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision"],
+        credentialId: "",
         icon: "fas fa-brain"
     },
     {
