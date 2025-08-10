@@ -15,7 +15,7 @@ const Contact = () => {
 
   useEffect(() => {
     // Initialize EmailJS with your public key
-    emailjs.init("x14g7EOVwwfyEmUuN"); // Replace with your public key
+    emailjs.init("x14g7EOVwwfyEmUuN");
   }, []);
 
   // Clear status message after 5 seconds
@@ -52,8 +52,8 @@ const Contact = () => {
       };
 
       const result = await emailjs.send(
-        'service_309pt3c', // Replace with your EmailJS service ID
-        'template_4awovbp', // Replace with your EmailJS template ID
+        'service_j05bfpk',
+        'template_4awovbp',
         templateParams
       );
 
