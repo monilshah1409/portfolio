@@ -93,7 +93,7 @@ const Contact = () => {
               <i className="fas fa-envelope"></i>
               <div className="contact-info-content">
                 <h3>Email</h3>
-                <p>monilshah149@gmail.com</p>
+                <p>monilshah1409@gmail.com</p>
               </div>
             </div>
             
