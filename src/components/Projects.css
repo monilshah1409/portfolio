@@ -1,0 +1,240 @@
+.projects-container {
+  min-height: 100vh;
+  padding: 6rem 2rem 2rem;
+  background: var(--background-primary);
+}
+
+.projects-content-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-content-box h1 {
+  color: var(--text-secondary);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.projects-content-box h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.project-card {
+  background: rgba(17, 34, 64, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  transition: all 0.3s ease;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project-header h2 {
+  color: var(--accent-color);
+  font-size: 1.4rem;
+  margin: 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.project-header h2::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  opacity: 0;
+}
+
+.project-description.active {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.project-description p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .projects-content-box h1 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-description p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    padding: 4rem 0.8rem 1.5rem;
+  }
+
+  .projects-content-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-header h2 {
+    font-size: 1.1rem;
+    padding-left: 1.2rem;
+  }
+
+  .expand-button {
+    font-size: 1rem;
+  }
+
+  .project-description p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Modal Styles */
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: rgba(17, 34, 64, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+.modal-content h2 {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.modal-content p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  display: block !important;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+  color: var(--accent-color);
+  transform: rotate(90deg);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-link-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.project-link-button:hover {
+  background-color: rgba(100, 255, 218, 0.8);
+}
