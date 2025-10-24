@@ -1,16 +1,188 @@
 .experience-container {
-  padding: 20px;
-  max-width: 800px;
+  padding: 6rem 2rem 2rem;
+  background: var(--background-primary);
+  max-width: 1200px;
   margin: 0 auto;
   color: var(--text-primary);
 }
 
 .experience-container h1 {
+  color: var(--text-secondary);
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
 }
 
-.experience-container p {
+.experience-container h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.categories-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.internships-category,
+.freelancing-category {
+  flex: 1;
+}
+
+.internships-category h2,
+.freelancing-category h2 {
+  color: var(--text-secondary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.internships-category h2::after,
+.freelancing-category h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: var(--accent-color);
+  border-radius: 1px;
+}
+
+.experience-item {
+  background: rgba(17, 34, 64, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  transition: all 0.3s ease;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.experience-header h3 {
+  color: var(--accent-color);
+  font-size: 1.4rem;
+  margin: 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.experience-header h3::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  color: var(--accent-color);
   font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.experience-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  opacity: 0;
+}
+
+.experience-description.active {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.experience-description p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
   line-height: 1.6;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .categories-wrapper {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .internships-category,
+  .freelancing-category {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .experience-container h1 {
+    font-size: 2rem;
+  }
+
+  .experience-item {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .experience-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience-description p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-container {
+    padding: 4rem 0.8rem 1.5rem;
+  }
+
+  .experience-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .experience-item {
+    padding: 1rem;
+  }
+
+  .experience-header h3 {
+    font-size: 1.1rem;
+    padding-left: 1.2rem;
+  }
+
+  .expand-button {
+    font-size: 1rem;
+  }
+
+  .experience-description p {
+    font-size: 0.95rem;
+  }
 }
