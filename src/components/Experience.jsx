@@ -14,13 +14,22 @@ const Experience = () => {
           <strong>Graphics & Web Design Intern</strong>
           <div>Unnati Informatics LLP | 5 June 2025 - 15 July 2025</div>
         </div>
-        <div className="education-section">
-          <strong>Machine Learning Intern</strong>
-          <div>Growthlink | 26 March 2025 - 26 April 2025</div>
-        </div>
+      
         <div className="education-section">
           <strong>Data Analyst Intern</strong>
           <div>Unified Mentor | 15 July 2024 - 15 October 2024</div>
+        </div>
+        <div className="education-section">
+          <strong>Freelancing</strong>
+          <div>RESTART (Mental Health Clinic Website) | 15 Days | 2024</div>
+        </div>
+        <div className="education-section">
+          <strong>Freelancing</strong>
+          <div>V K Engineers (Attendance & Payment Management System) | Ongoing | 2024</div>
+        </div>
+        <div className="education-section">
+          <strong>Freelancing</strong>
+          <div>Dr Shrey Desai (Orthopaedic Surgeon Website) | Ongoing | 2024</div>
         </div>
       </div>
     </div>
