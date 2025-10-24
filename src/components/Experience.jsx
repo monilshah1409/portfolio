@@ -21,15 +21,15 @@ const Experience = () => {
         </div>
         <div className="education-section">
           <strong>Freelancing</strong>
-          <div>RESTART (Mental Health Clinic Website) | 15 Days | 2024</div>
+          <div>RESTART (Mental Health Clinic Website) | Completed | 2025</div>
         </div>
         <div className="education-section">
           <strong>Freelancing</strong>
-          <div>V K Engineers (Attendance & Payment Management System) | Ongoing | 2024</div>
+          <div>V K Engineers (Attendance & Payment Management System) | Completed | 2025</div>
         </div>
         <div className="education-section">
           <strong>Freelancing</strong>
-          <div>Dr Shrey Desai (Orthopaedic Surgeon Website) | Ongoing | 2024</div>
+          <div>Dr Shrey Desai (Orthopaedic Surgeon Website) | Ongoing | 2025</div>
         </div>
       </div>
     </div>
