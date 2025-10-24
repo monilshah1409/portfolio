@@ -1,0 +1,16 @@
+.experience-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-primary);
+}
+
+.experience-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
